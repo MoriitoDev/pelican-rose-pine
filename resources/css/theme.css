@@ -1,0 +1,134 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@theme {
+  --color-secondary-50: rgba(var(--secondary-50), <alpha-value>);
+  --color-secondary-900: rgba(var(--secondary-900), <alpha-value>);
+}
+
+.fi-layout {
+    @apply bg-[#faf4ed] dark:bg-[#191724];
+}
+
+.fi-body {
+    @apply bg-[#faf4ed] dark:bg-[#191724];
+}
+
+.fi-topbar {
+    & nav {
+        @apply bg-[#fffaf3] dark:bg-[#1f1d2e] border-b border-[#f2e9e1] dark:border-[#191724];
+    }
+}
+
+.fi-sidebar-header {
+    @apply bg-[#fffaf3] dark:bg-[#1f1d2e] border-e border-[#f2e9e1] dark:border-[#191724];
+}
+
+.fi-sidebar-item-label,
+.fi-topbar-item-label {
+    @apply text-[#797593] dark:text-[#908caa];
+}
+
+.fi-sidebar-item {
+    & .fi-sidebar-item-button {
+        @apply rounded-lg hover:bg-[#f2e9e1] dark:hover:bg-[#21202e];
+    }
+
+    &-active {
+        & a {
+            & svg { @apply text-[#907aa9] dark:text-[#c4a7e7]; }
+            & span { @apply text-[#575279] dark:text-[#e0def4]; }
+        }
+
+        & .fi-sidebar-item-button {
+            @apply rounded-lg bg-[#dfdad9] dark:bg-[#26233a];
+        }
+    }
+}
+
+.fi-ta-ctn {
+    @apply shadow-xl rounded-2xl border-none ring-1 ring-[#f2e9e1] dark:ring-[#21202e] divide-[#f2e9e1] dark:divide-[#21202e];
+
+    &,
+    & .fi-ta-ctn-with-header {
+        @apply bg-[#fffaf3] dark:bg-[#1f1d2e];
+    }
+}
+
+.fi-ta-table {
+    & thead tr {
+        @apply bg-[#f2e9e1] dark:bg-[#191724];
+    }
+}
+
+.fi-ta-header-cell-label {
+    @apply text-[#575279] dark:text-[#e0def4];
+}
+
+.fi-wi-stats-overview-stat,
+.fi-wi-widget.fi-wi-chart .fi-section,
+.fi-wi-widget.fi-wi-table .fi-ta-ctn,
+.fi-dropdown-panel {
+    @apply bg-[#fffaf3] dark:bg-[#1f1d2e] ring-1 ring-[#f2e9e1] dark:ring-[#21202e] shadow-lg;
+}
+
+.dark {
+    & .fi-wi-widget:not(.fi-wi-stats-overview):not(.fi-wi-chart):not(.fi-wi-table) .fi-section,
+    & .fi-wi-stats-overview-stat,
+    & .fi-wi-widget.fi-wi-chart .fi-section,
+    & .fi-wi-widget.fi-wi-table .fi-ta-ctn,
+    & .fi-tenant-menu,
+    & .fi-dropdown-panel {
+        background: 
+            linear-gradient(#1f1d2e, #1f1d2e), 
+            linear-gradient(to right, #31748f, #c4a7e7);
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+        border: 1px solid transparent;
+    }
+}
+
+.fi-input-wrp {
+    @apply bg-[#fffaf3] dark:bg-[#26233a] ring-1 ring-[#f2e9e1] dark:ring-[#191724];
+}
+
+.fi-global-search-field {
+    & .fi-input-wrp {
+        @apply rounded-full bg-[#f2e9e1] dark:bg-[#26233a] ring-4 ring-[#faf4ed] dark:ring-[#191724];
+    }
+}
+
+.fi-btn-color-primary {
+    @apply bg-[#d7827e] dark:bg-[#ebbcba];
+
+    & .fi-btn-label {
+        @apply text-[#faf4ed] dark:bg-[#191724];
+    }
+}
+
+.fi-badge {
+    @apply rounded-xl bg-[#f2e9e1] dark:bg-[#26233a];
+    
+    & span {
+        @apply text-[#286983] dark:text-[#9ccfd8];
+    }
+}
+
+.fi-tabs {
+    @apply dark:bg-[#191724] border border-transparent dark:border-[#21202e] rounded-xl;
+}
+
+.fi-tabs-item {
+    @apply dark:text-[#908caa] hover:dark:bg-[#1f1d2e] rounded-lg transition;
+    
+    &.fi-active {
+        @apply dark:bg-[#26233a] dark:text-[#e0def4] ring-1 ring-[#403d52];
+    }
+
+    & .fi-badge {
+        @apply dark:bg-[#1f1d2e] dark:text-[#c4a7e7];
+    }
+}
+
+.fi-tabs.fi-contained {
+    @apply dark:bg-[#191724] dark:ring-[#21202e];
+}

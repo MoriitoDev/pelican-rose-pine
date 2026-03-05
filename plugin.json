@@ -1,0 +1,19 @@
+{
+    "id": "rose-pine-theme",
+    "name": "Rose Pine Theme",
+    "author": "Mori",
+    "version": "1.0.0",
+    "description": "A clean theme for pelican panel.",
+    "category": "theme",
+    "url": "https://github.com/MoriitoDev/pelican-rose-pine",
+    "update_url": null,
+    "namespace": "Mori\\RosePineTheme",
+    "class": "RosePineThemePlugin",
+    "panels": null,
+    "panel_version": "1.0.0-beta33",
+    "composer_packages": null,
+    "meta": {
+        "status": "enabled",
+        "status_message": null
+    }
+}
